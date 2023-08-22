@@ -1,8 +1,7 @@
 const express = require('express')
-const app = express()
+const guitar = require('./router/guitar')
 
 app.use(express.json())
 
-app.post('/product', (req, res) => {
-    
-})
+
+app.use('/api/user', guitar)

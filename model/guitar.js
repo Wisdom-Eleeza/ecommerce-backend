@@ -2,7 +2,12 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose
 
 const guitarSchema = new Schema ({
-    guitar: String
+    guitar: {
+        serialNumber: Number,
+        model: String,
+        builder: String,
+        price: Number
+    }
 })
 
 
